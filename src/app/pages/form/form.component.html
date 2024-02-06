@@ -1,0 +1,43 @@
+<h1>Recargas</h1>
+
+<form>
+    <table>
+        <tr>
+            <td>
+                <label>Ingrese porfavor el numero de telefono:</label>
+            </td>
+            <td>
+                <input type="text" name="txtDni" [(ngModel)]="recarga.numero"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Ingrese porfavor el monto de recarga</label>
+            </td>
+            <td>
+                <input type="text" name="txtNombre"  [(ngModel)]="recarga.monto"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>Ingrese porfavor la Operadora:</label>
+            </td>
+            <td>
+                <input type="text" name="txtDireccion"  [(ngModel)]="codigoOpera"/>
+            </td>
+        </tr>
+    </table>
+</form>
+<div class="boton">
+    <button (click)="guardar()">Recargar</button>
+</div>
+
+<table>
+    <tr>
+        <th>Codigo</th>
+        <th>Numero</th>
+        <th>Monto</th>
+        <th>Operador</th>
+    </tr>
+    
+</table>
